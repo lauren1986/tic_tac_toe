@@ -27,11 +27,13 @@
 	squareEight.onclick = setSquare;
 	squareNine.onclick = setSquare;
 
+	var leaf = getElementsByClassName("play");
+
 	function setSquare(){
 		console.log(this.firstChild);
 		if (playerOne == true) {
 			this.firstChild.class+= " " + xClass;
-			this.firstChild.innerHTML = "x";
+			this.firstChild.style.visibility = "visible";
 		}
 		else {
 			this.firstChild.class+= " " + oClass;
