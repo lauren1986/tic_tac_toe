@@ -16,37 +16,37 @@
 	// Start to see if we can add behavior to squareOne on click.
 
 	squareOne.onclick = function(){
-		console.log("One works!");
+		document.getElementById("square1").innerHTML="<i class='fa fa-diamond fa-5x fa-pulse'></i>";
 	}
 
 	squareTwo.onclick = function(){
-		console.log("Two works!");
+		document.getElementById("square2").innerHTML="<i class='fa fa-heartbeat fa-5x fa-pulse'></i>";
 	}
 
 	squareThree.onclick = function(){
-		console.log("Three works!");
+		document.getElementById("square3").innerHTML="<i class='fa fa-forumbee fa-5x fa-pulse'></i>";
 	}
 
 	squareFour.onclick = function(){
-		console.log("Four works!");
+		document.getElementById("square4").innerHTML="<i class='fa fa-user-secret fa-5x fa-pulse'></i>";
 	}
 
 	squareFive.onclick = function(){
-		console.log("Five works!");
+		document.getElementById("square5").innerHTML="<i class='fa fa-motorcycle fa-5x fa-pulse'></i>";
 	}
 
 	squareSix.onclick = function(){
-		console.log("Six works!");
+		document.getElementById("square6").innerHTML="<i class='fa fa-pied-piper-alt fa-5x fa-pulse'></i>";
 	}
 
 	squareSeven.onclick = function(){
-		console.log("Seven works!");
+		document.getElementById("square7").innerHTML="<i class='fa fa-pagelines fa-5x fa-pulse'></i>";
 	}
 	squareEight.onclick = function(){
-		console.log("Eight works!");
+		document.getElementById("square8").innerHTML="<i class='fa fa-paw fa-5x fa-pulse'></i>";
 	}
 	squareNine.onclick = function(){
-		console.log("Nine works!");
+		document.getElementById("square9").innerHTML="<i class='fa fa-rocket fa-5x fa-pulse'></i>";
 	}
 
 

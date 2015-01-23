@@ -238,3 +238,9 @@ p.copyright {
 #square9:hover {
 	background-color: #A5FCA4;
 }
+
+/* ---- Icon Stying ---- */
+
+i {
+	color: #FFFFFF;
+}
