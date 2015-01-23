@@ -15,53 +15,52 @@
 
 	// Start to see if we can add behavior to squareOne on click.
 
-	squareOne.onclick = function(){
-		document.getElementById("square1").innerHTML="<i class='fa fa-diamond fa-5x fa-pulse'></i>";
-	}
+	var playerOne = true;
 
-	squareTwo.onclick = function(){
-		document.getElementById("square2").innerHTML="<i class='fa fa-heartbeat fa-5x fa-pulse'></i>";
-	}
+	squareOne.onclick = setSquare;
+	squareTwo.onclick = setSquare;
+	squareThree.onclick = setSquare;
+	squareFour.onclick = setSquare;
+	squareFive.onclick = setSquare;
+	squareSix.onclick = setSquare;
+	squareSeven.onclick = setSquare;
+	squareEight.onclick = setSquare;
+	squareNine.onclick = setSquare;
 
-	squareThree.onclick = function(){
-		document.getElementById("square3").innerHTML="<i class='fa fa-forumbee fa-5x fa-pulse'></i>";
-	}
-
-	squareFour.onclick = function(){
-		document.getElementById("square4").innerHTML="<i class='fa fa-user-secret fa-5x fa-pulse'></i>";
-	}
-
-	squareFive.onclick = function(){
-		document.getElementById("square5").innerHTML="<i class='fa fa-motorcycle fa-5x fa-pulse'></i>";
-	}
-
-	squareSix.onclick = function(){
-		document.getElementById("square6").innerHTML="<i class='fa fa-pied-piper-alt fa-5x fa-pulse'></i>";
-	}
-
-	squareSeven.onclick = function(){
-		document.getElementById("square7").innerHTML="<i class='fa fa-pagelines fa-5x fa-pulse'></i>";
-	}
-	squareEight.onclick = function(){
-		document.getElementById("square8").innerHTML="<i class='fa fa-paw fa-5x fa-pulse'></i>";
-	}
-	squareNine.onclick = function(){
-		document.getElementById("square9").innerHTML="<i class='fa fa-rocket fa-5x fa-pulse'></i>";
+	function setSquare(){
+		console.log(this.firstChild);
+		if (playerOne == true) {
+			this.firstChild.class+= " " + xClass;
+			this.firstChild.innerHTML = "x";
+		}
+		else {
+			this.firstChild.class+= " " + oClass;
+			this.firstChild.innerHTML = "o";
+		}
+		playerOne = ! playerOne;
 	}
 
 
+// This section focuses on alternating turns and alternating icons.
+
+	// Here we start to create alternating turns for Player 1 and Player 2.
+	var count = 1;
+	var xClass = "fa-diamond";
+	var oClass = "fa-user-secret";
 
 
+	while (count < 10) {
+		console.log(count);
+		count++;
+	}
 
-
-
-
-
-// This allows you to determine whose turn it is
-count = 1;
-count % 2 == 0 // Player 1's turn;
-count % 2 != 0 // Player 2's turn;
+	//if (count % 2 == 0) {
+		//console.log(PlayerOne);
+	//}
+	//else (count % 2 != 0) {
+		//console.log(PlayerTwo);
+	//}
 
 // This allows you to define the win conditions in an array, based on assigning numbers to each square in the grid.
 
-win = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+//win = [["squareOne","squareTwo","squareThree"],["squareFour","squareFive","squareSix"],["squareSeven","squareEight","squareNine"],["squareOne","squareFour","squareSeven"],["squareTwo","squareFive","squareEight"],["squareThree","squareSeven","squareNine"],["squareOne","squareFive","squareNine"],["squareThree","squareFive","squareSeven"]]

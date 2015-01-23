@@ -26,7 +26,7 @@ body {
 }
 
 /* --- Columns --- */
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
 .column {
 	float: left;
 	padding-left: 1rem;
@@ -137,15 +137,13 @@ p.copyright {
 
 .grid {
 	width: 33.3%;
+	height: 33.3%;
 	float: left;
 	padding: 15%;
 }
 
 #square1 {
-	width: 33.3%;
-	float: left;
 	background-color: #CCFCCB;
-	padding: 15%;
 }
 
 #square1:hover {
@@ -153,10 +151,7 @@ p.copyright {
 }
 
 #square2 {
-	width: 33.3%;
-	float: left;
 	background-color: #568259;
-	padding: 15%;
 }
 
 #square2:hover {
@@ -164,20 +159,14 @@ p.copyright {
 }
 
 #square3 {
-	width: 33.3%;
-	float: left;
 	background-color: #96E6B3;
-	padding: 15%;
 }
 #square3:hover {
 	background-color: #70E59B;
 }
 
 #square4 {
-	width: 33.3%;
-	float: left;
 	background-color: #96E6B3;
-	padding: 15%;
 }
 
 #square4:hover {
@@ -185,10 +174,7 @@ p.copyright {
 }
 
 #square5 {
-	width: 33.3%;
-	float: left;
 	background-color: #CCFCCB;
-	padding: 15%;
 }
 
 #square5:hover {
@@ -196,10 +182,7 @@ p.copyright {
 }
 
 #square6 {
-	width: 33.3%;
-	float: left;
 	background-color: #568259;
-	padding: 15%;
 }
 
 #square6:hover {
@@ -207,10 +190,7 @@ p.copyright {
 }
 
 #square7 {
-	width: 33.3%;
-	float: left;
 	background-color: #568259;
-	padding: 15%;
 }
 
 #square7:hover {
@@ -218,10 +198,7 @@ p.copyright {
 }
 
 #square8 {
-	width: 33.3%;
-	float: left;
 	background-color: #96E6B3;
-	padding: 15%;
 }
 
 #square8:hover {
@@ -229,10 +206,7 @@ p.copyright {
 }
 
 #square9 {
-	width: 33.3%;
-	float: left;
 	background-color: #CCFCCB;
-	padding: 15%;
 }
 
 #square9:hover {
@@ -243,4 +217,9 @@ p.copyright {
 
 i {
 	color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	margin: auto;
 }
+
+ 
