@@ -125,7 +125,7 @@ h3.subtitle {
 p.copyright {
 	text-align: center;
 	font-size: 70%;
-	margin-top: 5%;
+	margin-top: 0% 15% 0% 15%;
 }
 
 /* ---- Tic Tac Toe Board Styling --- */
@@ -140,7 +140,7 @@ p.copyright {
 	max-width: 33.3%;
 	height: 33.3%;
 	float: left;
-	padding:5%;
+	padding: 5% 15%;
 }
 
 #square1 {
@@ -220,7 +220,6 @@ i {
 	color: #FFFFFF;
 	height: 100%;
 	width: 100%;
-	margin: auto;
 	visibility: hidden;
 }
 

@@ -13,31 +13,38 @@
 	var squareEight = document.getElementById("square8");
 	var squareNine = document.getElementById("square9");
 
+	// images
+
+	images = document.getElementsByTagName("i");
+	// image2 = document.getElementsByTagName("i")[1];
+	// image3 = document.getElementsByTagName("i")[2];
+
 	// Start to see if we can add behavior to squareOne on click.
 
 	var playerOne = true;
 
-	squareOne.onclick = setSquare;
-	squareTwo.onclick = setSquare;
-	squareThree.onclick = setSquare;
-	squareFour.onclick = setSquare;
-	squareFive.onclick = setSquare;
-	squareSix.onclick = setSquare;
-	squareSeven.onclick = setSquare;
-	squareEight.onclick = setSquare;
-	squareNine.onclick = setSquare;
+	// squareOne.onclick = setSquare;
+	// squareTwo.onclick = setSquare;
+	// squareThree.onclick = setSquare;
+	// squareFour.onclick = setSquare;
+	// squareFive.onclick = setSquare;
+	// squareSix.onclick = setSquare;
+	// squareSeven.onclick = setSquare;
+	// squareEight.onclick = setSquare;
+	// squareNine.onclick = setSquare;
 
-	var leaf = getElementsByClassName("play");
-
-	function setSquare(){
+	function setSquare(num){
 		console.log(this.firstChild);
 		if (playerOne == true) {
-			this.firstChild.class+= " " + xClass;
-			this.firstChild.style.visibility = "visible";
+			console.log(images[num]);
+			images[num].style.visibility = "visible";
+			// this.firstChild.class+= " " + xClass;
+			// this.image1.style.visibility = "visible";
 		}
 		else {
-			this.firstChild.class+= " " + oClass;
-			this.firstChild.innerHTML = "o";
+			images[num+1].style.visibility = "visible";
+			// this.firstChild.class+= " " + oClass;
+			// this.firstChild.style.visibility = "visible";
 		}
 		playerOne = ! playerOne;
 	}
@@ -47,8 +54,8 @@
 
 	// Here we start to create alternating turns for Player 1 and Player 2.
 	var count = 1;
-	var xClass = "fa-diamond";
-	var oClass = "fa-user-secret";
+	var xClass = document.getElementsByClassName("fa-diamond");
+	var oClass = document.getElementsByClassName("fa-user-secret");
 
 
 	while (count < 10) {
