@@ -13,15 +13,11 @@
 	var squareEight = document.getElementById("square8");
 	var squareNine = document.getElementById("square9");
 
-	// images
+	// Set variable for icons.
 
 	images = document.getElementsByTagName("i");
-	// image2 = document.getElementsByTagName("i")[1];
-	// image3 = document.getElementsByTagName("i")[2];
 
 	// Start to see if we can add behavior to squareOne on click.
-
-	var playerOne = true;
 
 	// squareOne.onclick = setSquare;
 	// squareTwo.onclick = setSquare;
@@ -33,10 +29,15 @@
 	// squareEight.onclick = setSquare;
 	// squareNine.onclick = setSquare;
 
+// This section focuses on alternating turns and alternating icons.
+
+	// Here we start to display alternating turns and icons for Player 1 and Player 2.
+
+	var playerOne = true;
+
 	function setSquare(num){
 		console.log(this.firstChild);
 		if (playerOne == true) {
-			console.log(images[num]);
 			images[num].style.visibility = "visible";
 			// this.firstChild.class+= " " + xClass;
 			// this.image1.style.visibility = "visible";
@@ -49,14 +50,9 @@
 		playerOne = ! playerOne;
 	}
 
+	// Now we focus on limiting the number of turns permitted.
 
-// This section focuses on alternating turns and alternating icons.
-
-	// Here we start to create alternating turns for Player 1 and Player 2.
 	var count = 1;
-	var xClass = document.getElementsByClassName("fa-diamond");
-	var oClass = document.getElementsByClassName("fa-user-secret");
-
 
 	while (count < 10) {
 		console.log(count);
